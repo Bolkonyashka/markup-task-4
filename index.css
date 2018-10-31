@@ -1,0 +1,143 @@
+a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover
+{
+    color: #8170c0;
+}
+
+.view-mode-button
+{
+    display: block;
+    width: 50px;
+    margin: 20px;
+}
+
+.view-mode-button:hover
+{
+    cursor: pointer;
+}
+
+.view-mode-button img
+{
+    width: 50px;
+    height: 50px;
+    transform: rotate(90deg);
+}
+
+input[type='checkbox']
+{
+    visibility: hidden;
+    position: absolute;
+}
+
+input[type='checkbox']:checked ~ label img
+{
+    transform: rotate(180deg);
+}
+
+input[type='checkbox']:checked ~ article
+{
+    display: block;
+    width: 600px;
+    margin: 0;
+    padding: 20px;
+    border: solid #cfcfcf;
+    border-width: 0 0 1px;
+}
+
+input[type='checkbox']:checked ~ article:hover
+{
+    box-shadow: none;
+}
+
+input[type='checkbox']:checked ~ article header
+{
+    height: auto;
+}
+
+input[type='checkbox']:checked ~ article header img
+{
+    width: 100%;
+    height: auto;
+}
+
+input[type='checkbox']:checked ~ article .cell-mode-info
+{
+    display: none;
+}
+
+input[type='checkbox']:checked ~ article .list-mode-info
+{
+    display: block;
+}
+
+input[type='checkbox']:checked ~ article .about-kitty
+{
+    padding: 0;
+    padding-top: 20px;
+}
+
+.main-page
+{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #cfcfcf;
+    display: inline-block;
+    text-align: center;
+}
+
+.kitty-box
+{
+    width: 250px;
+    border: 1px solid #cfcfcf;
+    margin: 10px;
+    display: inline-block;
+}
+
+.kitty-box:hover
+{
+    box-shadow: 0 0 10px #808080;
+}
+
+.header-with-img
+{
+    overflow: hidden;
+    height: 180px;
+}
+
+.header-with-img img
+{
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    transition: all .5s ease-out;
+}
+
+.header-with-img img:hover
+{
+    transform: scale(1.1);
+}
+
+.about-kitty
+{
+    padding: 10px;
+    text-align: left;
+}
+
+.list-mode-info
+{
+    display: none;
+}
+
+.kitty-name
+{
+    margin: 0;
+    font-weight: 300;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

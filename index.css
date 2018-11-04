@@ -141,3 +141,15 @@ input[type='checkbox']:checked ~ article .about-kitty
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.cell-mode-info
+{
+    transition: all .3s ease-out;
+}
+
+.cell-mode-info:hover
+{
+    color: #8170c0;
+    cursor: default;
+    transform: translate(3px, 0);
+}
